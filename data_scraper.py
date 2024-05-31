@@ -75,11 +75,9 @@ def scrape_images(url, patterns):
         print(f'Error scraping {url}: {e}')
 
 # Example usage
-# target_url = 'https://www.plateshack.com/y2k/Mauritania/mauritaniay2k.htm'
-target_url = 'https://www.voursa.com/Index.cfm?PN=4&gct=1&sct=11&gv=13'
+target_url = 'https://www.Example.com/'
 
 patterns = [
-    r'RIM | R.I.M',  # Pattern to match 'R.I.M' or 'RIM'
     r'\d{4}[a-zA-Z]{2}\d{2}',  # Pattern to match '3120AC00', '7800AA07', etc.
     r'\d{4} [a-zA-Z]{2}\d{2}', # Pattern to match '3120 AC00', '7800 AA07', etc.
     r'\d{4}[a-zA-Z]{2} \d{2}', # Pattern to match '3120AC 00', '7800AA 07', etc.
